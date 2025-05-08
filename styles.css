@@ -96,11 +96,48 @@ footer {
     height: 50px;
     margin: 0 10px;
 }
+.footer-logo-dunloc {
+    height: 40px;
+    margin: 0 10px;
 
+}
 /* RESPONSIVO */
 @media (max-width: 768px) {
     .button-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .column {
+        width: 48%; /* cada coluna ocupa metade da tela */
+        max-width: none;
+        gap: 0.5rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+        gap: 8px;
+    }
+
+    .btn-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .footer-logo,
+    .footer-logo-dunloc {
+        height: 35px;
+    }
+
+    .container {
+        padding: 2rem 1rem 2rem 1rem;
     }
 }
+
